@@ -14,7 +14,7 @@ $('#form-username').submit(function(event) {
   if ($username.val() == '')
     return;
 
-  socket = io.connect('http://localhost:3000');
+  socket = io();
 
   socket.emit('user changed', $username.val());
   currentUser = $username.val();
