@@ -52,7 +52,7 @@ $('#form-username').submit(function(event) {
 
 $('#inputbox').submit(function(event) {
   event.preventDefault();
-  $messages.append('<li class="list-group-item list-group-item-success"><b>'+currentUser+': </b>'+$message.val()+'</li>');
+  $messages.append('<li class="list-group-item"><b>'+currentUser+': </b>'+$message.val()+'</li>');
   var sendObj = {
     from: currentUser,
     message: $message.val()
