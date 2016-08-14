@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+a, a:hover {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+#container {
+  display: none;
+}

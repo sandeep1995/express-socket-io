@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <div class="container" id="login">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <center>
+          <form id="form-username">
+            <div class="form-group">
+              <h4>Let's start chatting</h4>
+              <input type="text" class="form-control" name="name" placeholder="Type a name, and hit enter" id="username-box">
+            </div>
+          </form>
+        </center>
+      </div>
+    </div>
+  </div>
+
+    <div id="container" class="container">
+      <div  class="col-md-4 well">
+        <h3>Currently Online</h3>
+        <ul class="list-group" id="user"></ul>
+      </div>
+      <div id="chatwindow" class="col-md-8">
+        <ul id="messges" class="list-group">
+          <li class="list-group-item"><b>Aman: </b><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </span></li>
+          <li class="list-group-item"><b>Sandeep: </b><span>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </span></li>
+        </ul>
+        <form id="inputbox" class="form-group">
+          <div class="col-md-8">
+            <textarea class="form-control" name="message" id="message" rows="2"></textarea>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-primary" name="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
